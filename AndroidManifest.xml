@@ -163,7 +163,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
-            <intent-filter android:priority="11">
+            <intent-filter android:priority="12">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
@@ -188,7 +188,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
-            <intent-filter android:priority="10">
+            <intent-filter android:priority="11">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
@@ -3039,6 +3039,25 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.webview.WebViewAppPicker" />
         </activity-alias>
+
+        <!-- Buttons settings activity -->
+        <activity android:name="Settings$ButtonsSettingsActivity"
+                android:label="@string/buttons_pref_title"
+                android:icon="@drawable/ic_settings_buttons"
+                android:taskAffinity=""
+                android:exported="true">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ButtonsSettings" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/buttons_pref_summary" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
 
         <activity android:name=".backup.BackupSettingsActivity"
                   android:label="@string/privacy_settings_title"
