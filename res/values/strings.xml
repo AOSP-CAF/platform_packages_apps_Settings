@@ -2404,8 +2404,6 @@
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="build_number">Build number</string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-    <string name="qgp_version">QGP Version</string>
-    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="selinux_status">SELinux status</string>
 
     <!-- About phone screen, show when a value of some status item is unavailable. -->
@@ -7855,7 +7853,6 @@
     <string name="profiles_settings_title">System profiles</string>
     <string name="select_sim_card">Select SIM card</string>
 
-    <string name="mbn_version">MBN version</string>
     <!-- show security alert for open type end -->
     <string name="voice_over_lte">Voice over LTE</string>
 

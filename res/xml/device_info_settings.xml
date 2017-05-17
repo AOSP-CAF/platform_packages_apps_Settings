@@ -114,12 +114,6 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
-        <!-- Device MBN version -->
-        <Preference android:key="mbn_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mbn_version"
-                android:summary="@string/device_info_default"/>
-
         <!-- Device Baseband version -->
         <com.android.settings.DividerPreference
                 android:key="baseband_version"
@@ -148,12 +142,6 @@
                 android:shouldDisableView="false"
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
-
-        <!-- Device QGP version -->
-        <Preference android:key="qgp_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/qgp_version"
-		android:summary="@string/device_info_default"/>
 
         <!-- SELinux status information -->
         <com.android.settings.DividerPreference
