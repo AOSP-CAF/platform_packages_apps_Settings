@@ -123,6 +123,7 @@ public final class DevicePickerFragment extends DeviceListPreferenceFragment {
             if (mLaunchPackage != null && mLaunchClass != null) {
                 intent.setClassName(mLaunchPackage, mLaunchClass);
             }
+            intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
             getActivity().sendBroadcast(intent);
         }
     }
@@ -168,6 +169,7 @@ public final class DevicePickerFragment extends DeviceListPreferenceFragment {
         if (mLaunchPackage != null && mLaunchClass != null) {
             intent.setClassName(mLaunchPackage, mLaunchClass);
         }
+        intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
         getActivity().sendBroadcast(intent);
     }
 }
